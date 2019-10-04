@@ -1,17 +1,21 @@
 import React from 'react'
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
 
-import ListEvent from './ListEvent'
+import TimeListEvent from './TimeListEvent'
+
+const styles = {
+  event: css`
+    .time-list-event {
+      grid-template-columns: 55px 1fr;
+    }
+  `
+}
 
 function SimpleDateListEvent ({event, className}) {
   return (
-    <ListEvent className={className}
-      name={event.name}
-      beginDate={event.begin}
-      duration={event.duration}
-      endDate={event.end}
-      showDate={true}
-    />
-)
+    <div css={styles.event}><TimeListEvent className={`time-list-event ${className || ''}`} event={event} showRange={false} showPlace={false} /></div>
+  )
 }
 
 export default SimpleDateListEvent

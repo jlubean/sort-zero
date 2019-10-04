@@ -5,7 +5,7 @@ import './App.css'
 
 import DateListEvent from './components/DateListEvent'
 import DateTimeListEvent from './components/DateTimeListEvent'
-import ListEvent from './components/ListEvent'
+import ComplexListEvent from './components/ComplexListEvent'
 import SimpleDateListEvent from './components/SimpleDateListEvent'
 import SimpleTimeListEvent from './components/SimpleTimeListEvent'
 import TimeListEvent from './components/TimeListEvent'
@@ -76,7 +76,7 @@ function App() {
         { events && events.map((event, index) => (
           <li className="event" key={`t-${index}`}>
             { false && 
-            <ListEvent
+            <ComplexListEvent
               name={event.name}
               place={event.place}
               beginDate={event.begin}
@@ -96,7 +96,7 @@ function App() {
         { events && events.map((event, index) => (
           <li className="event" key={`st-${index}`}>
             { false && 
-            <ListEvent
+            <ComplexListEvent
               name={event.name}
               beginDate={event.begin}
               duration={event.duration}
@@ -114,7 +114,7 @@ function App() {
         { events && events.map((event, index) => (
           <li className="event" key={`d-${index}`}>
             { false && 
-            <ListEvent
+            <ComplexListEvent
               name={event.name}
               place={event.place}
               beginDate={event.begin}
@@ -134,7 +134,7 @@ function App() {
         { events && events.map((event, index) => (
           <li className="event" key={`sd-${index}`}>
             { false && 
-            <ListEvent
+            <ComplexListEvent
               name={event.name}
               beginDate={event.begin}
               duration={event.duration}
@@ -152,7 +152,7 @@ function App() {
         { events && events.map((event, index) => (
           <li className="event" key={`dt-${index}`}>
             { false && 
-            <ListEvent
+            <ComplexListEvent
               name={event.name}
               place={event.place}
               beginDate={event.begin}
