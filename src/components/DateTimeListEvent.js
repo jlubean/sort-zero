@@ -51,7 +51,7 @@ const styles = {
   `
 }
 
-function DateListEvent ({event, className}) {
+function DateTimeListEvent ({event, className}) {
   return (
     <div css={styles.event} className={className}>
       <div className="date-time">
@@ -66,4 +66,4 @@ function DateListEvent ({event, className}) {
   )
 }
 
-export default DateListEvent
+export default DateTimeListEvent

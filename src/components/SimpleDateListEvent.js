@@ -2,11 +2,11 @@ import React from 'react'
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
-import TimeListEvent from './TimeListEvent'
+import DateListEvent from './DateListEvent'
 
 const styles = {
   event: css`
-    .time-list-event {
+    .date-list-event {
       grid-template-columns: 55px 1fr;
     }
   `
@@ -14,7 +14,7 @@ const styles = {
 
 function SimpleDateListEvent ({event, className}) {
   return (
-    <div css={styles.event}><TimeListEvent className={`time-list-event ${className || ''}`} event={event} showRange={false} showPlace={false} /></div>
+    <div css={styles.event}><DateListEvent className={`date-list-event ${className || ''}`} event={event} showRange={false} showPlace={false} /></div>
   )
 }
 
