@@ -5,6 +5,7 @@ import { jsx, css } from '@emotion/core'
 const styles = {
   event: css`
     display: grid;
+    font-family: Arial, Helvetica, sans-serif;
     grid-template-columns: 130px 1fr;
     grid-column-gap: 12px;
     box-sizing: border-box;
@@ -73,7 +74,7 @@ const styles = {
   `
 }
 
-function ListEvent (props) {
+function ComplexListEvent (props) {
   const { name, place, beginDate, duration, endDate, className } = props
   const { showDate, showDateRange, showTime, showTimeRange, showPlace } = props
   const timeOnly = !showDate && !showDateRange && showTime && !showTimeRange
@@ -125,4 +126,4 @@ function ListEvent (props) {
   )
 }
 
-export default ListEvent
+export default ComplexListEvent
