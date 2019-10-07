@@ -46,7 +46,12 @@ const styles = {
     }
 
     .event {
-      padding: 4px;
+      border-top: 1px solid #ccc;
+      padding: 8px 4px;
+    }
+
+    .event:first-of-type {
+      border-top: 0;
     }
   `,
   day: css`
@@ -61,7 +66,12 @@ const styles = {
   }
 
   .event {
-    padding: 4px;
+    border-top: 1px solid #ccc;
+    padding: 8px 4px;
+  }
+
+  .event:first-of-type {
+    border-top: 0;
   }
 `,
 month: css`
