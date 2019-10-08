@@ -35,7 +35,7 @@ function DayEvent ({event, className}) {
       <EventTime className="time" event={event} showRange={true} />
       <div className="name">{event.name}</div>
     </div>
-)
+  )
 }
 
 export default DayEvent

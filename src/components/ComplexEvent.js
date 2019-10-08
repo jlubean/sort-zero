@@ -76,7 +76,13 @@ const styles = {
 
 function ComplexListEvent (props) {
   const { name, place, beginDate, duration, endDate, className } = props
+
+  // 5 boolean configuration options --> 2^5 or 32 possible use cases?
+
   const { showDate, showDateRange, showTime, showTimeRange, showPlace } = props
+
+  // Logic to determine what CSS classes to use
+
   const timeOnly = !showDate && !showDateRange && showTime && !showTimeRange
   const timeRangeOnly = !showDate && !showDateRange && showTimeRange
   const dateOnly = showDate && !showDateRange && !showTime && !showTimeRange

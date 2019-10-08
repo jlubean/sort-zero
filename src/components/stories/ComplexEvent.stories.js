@@ -1,9 +1,9 @@
 import React from 'react';
-import ComplexListEvent from '../ComplexEvent';
+import ComplexEvent from '../ComplexEvent';
 
-export default { title: 'ComplexListEvent' };
+export default { title: 'ComplexEvent' };
 
-export const timeAndName = () => <ComplexListEvent
+export const timeAndName = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}
@@ -16,7 +16,7 @@ export const timeAndName = () => <ComplexListEvent
   showTimeRange={false}
 />;
 
-export const timeRangeAndNameAndPlace = () => <ComplexListEvent
+export const timeRangeAndNameAndPlace = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}
@@ -29,7 +29,7 @@ export const timeRangeAndNameAndPlace = () => <ComplexListEvent
   showTimeRange={true}
 />;
 
-export const dateAndName = () => <ComplexListEvent
+export const dateAndName = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}
@@ -42,7 +42,7 @@ export const dateAndName = () => <ComplexListEvent
   showTimeRange={false}
 />;
 
-export const dateRangeAndNamePlace = () => <ComplexListEvent
+export const dateRangeAndNamePlace = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}
@@ -55,7 +55,7 @@ export const dateRangeAndNamePlace = () => <ComplexListEvent
   showTimeRange={false}
 />;
 
-export const dateAndTimeAndNameAndPlace = () => <ComplexListEvent
+export const dateAndTimeAndNameAndPlace = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}
@@ -68,7 +68,7 @@ export const dateAndTimeAndNameAndPlace = () => <ComplexListEvent
   showTimeRange={false}
 />;
 
-export const dateRangeAndTimeRangeAndNameAndPlace = () => <ComplexListEvent
+export const dateRangeAndTimeRangeAndNameAndPlace = () => <ComplexEvent
   name="SORT Conference"
   place="U of U Institute Building, Salt Lake City"
   beginDate={new Date(2019, 9, 8, 8)}

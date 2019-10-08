@@ -111,14 +111,6 @@ month: css`
   `
 }
 
-export const eventView = () => <div css={styles.upcoming}>
-<h2>Upcoming Events</h2>
-<div class="upcoming">
-  <Event event={events[1]} className="event" />
-  <Event event={events[3]} className="event" />
-</div>
-</div>;
-
 export const dayView = () => <div css={styles.day}>
   <h2>Tuesday, October 8, 2019</h2>
   <div class="day">
@@ -175,4 +167,12 @@ export const monthView = () => <div css={styles.month}>
     <div class="other"><span class="date">1</span></div>
     <div class="other"><span class="date">2</span></div>
   </div>
-</div>
+</div>;
+
+export const upcomingEventsView = () => <div css={styles.upcoming}>
+  <h2>Upcoming Events</h2>
+  <div class="upcoming">
+    <Event event={events[1]} className="event" />
+    <Event event={events[3]} className="event" />
+  </div>
+</div>;
