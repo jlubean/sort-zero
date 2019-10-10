@@ -13,7 +13,7 @@ const styles = {
   `
 }
 
-function DateListEvent ({event, className}) {
+function MonthEvent ({event, className}) {
   return (
     <div css={styles.event} className={className}>
       <div className="name">{event.name}</div>
@@ -21,4 +21,4 @@ function DateListEvent ({event, className}) {
   )
 }
 
-export default DateListEvent
+export default MonthEvent
